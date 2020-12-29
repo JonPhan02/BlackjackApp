@@ -22,6 +22,7 @@
             android:layout_marginBottom="170dp"
             android:fontFamily="monospace"
             android:text="Welcome to Blackjack!"
+            android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -37,6 +38,7 @@
             android:layout_height="wrap_content"
             android:text="Rules"
             android:textAllCaps="true"
+            android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +52,8 @@
             android:id="@+id/rules2"
             android:layout_width="320dp"
             android:layout_height="48dp"
-            android:text="2) The objective of the game is to as close as you can to 21 without going over."
+            android:text="2) The objective of the game is to get as close as you can to 21 without going over."
+            android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +67,7 @@
             android:layout_width="322dp"
             android:layout_height="73dp"
             android:text="3) To achieve this goal, you can either draw: get another card from the deck, or stand: give up your turn and allow the dealer to draw cards. The dealer will have to draw until they reach 17."
+            android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Click to Start"
-            app:backgroundTint="#009688"
+            app:backgroundTint="#B30B1F"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -90,6 +94,7 @@
             android:layout_width="321dp"
             android:layout_height="69dp"
             android:text="4) Cards 1-10 are counted as their corresponding number value. J, Q, and K are counted as 10. An Ace can be counted as an 11, 10, or 1 depending on the greatest possible hand value without going over 21 "
+            android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -103,6 +108,7 @@
             android:layout_width="319dp"
             android:layout_height="67dp"
             android:text="1) You and the dealer both get dealt two cards. Both your cards are face up but only one of the dealer's is face up."
+            android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -116,6 +122,7 @@
             android:layout_width="323dp"
             android:layout_height="47dp"
             android:text="5) A bust is when you go over 21. If you draw 5 cards in a row without busting, you win. "
+            android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -123,6 +130,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.875" />
+
+        <ImageView
+            android:layout_width="241dp"
+            android:layout_height="131dp"
+            android:src="@drawable/suit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -136,7 +153,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#009688"
+            android:background="#B30B1F"
             app:popupTheme="@style/Theme.FirstApp.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
